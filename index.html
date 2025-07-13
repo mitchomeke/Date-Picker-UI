@@ -1,3 +1,4 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +43,7 @@
         button img {
             width: 24px;
             height: 24px;
+
         }
 
         .rectangle3 {
@@ -51,18 +53,36 @@
             border: 2px solid black;
             margin-left: 70px;
             margin-top: -2px;
+
         }
 
         .days {
-            padding-top: 50px;
+            padding-top: 10px;
             letter-spacing: 7.5px;
             text-align: center;
         }
 
         .month {
             text-align: center;
-            margin-top: 30px;
+            font-weight: bold;
+            flex-grow: 1;
         }
+
+        .left-arrow, .right-arrow{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .month-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-top: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -77,8 +97,10 @@
     </div>
 
     <div class="rectangle3">
-        <div class="month">
-            December 2022
+        <div class="month-row">
+            <button class="left-arrow">&lt;</button>
+            <div class="month">December 2022</div>
+            <button class="right-arrow">&gt;</button>
         </div>
         <div class="days">S M T W T F S</div>
         <hr style="border: 2px solid black; margin-top: 12px">
