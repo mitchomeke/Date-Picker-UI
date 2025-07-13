@@ -1,0 +1,90 @@
+.rectangle1 {
+    width: 350px;
+    height: 440px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.rectangle2 {
+    width: 190px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin-left: 70px;
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.format {
+    font-weight: bold;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.rectangle3 {
+    width: 200px;
+    height: 240px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin-left: 70px;
+    margin-top: -2px;
+
+}
+
+.days {
+    padding-top: 10px;
+    letter-spacing: 7.5px;
+    text-align: center;
+}
+
+.month {
+    text-align: center;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.left-arrow, .right-arrow{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.month-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 5px;
+    gap: 10px;
+
+}
+.grid-lines {
+    padding: 6px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 5px;
+}
